@@ -3,6 +3,7 @@ import UIKit
 class SuggestedRestaurantCollectionViewCell: UICollectionViewCell {
     
     // MARK: - IBOutlets:
+    
     @IBOutlet var restaurantNameLabel: UILabel!
     @IBOutlet var numberOfVotesLabel: UILabel!
     @IBOutlet var previewImage: UIImageView!
@@ -24,7 +25,13 @@ class SuggestedRestaurantCollectionViewCell: UICollectionViewCell {
     
     // (Function) updates views when restaurant gets set.
     func updateViews() {
-        
+        guard let restaurant = restaurant else {
+            print("Error loading Restaurant")
+            return
+        }
+        restaurantNameLabel.text = restaurant.restaurantName
+        numberOfVotesLabel.text = String(restaurant.numerOfVotes)
+        previewImage.image = UIImage(named: restaurant.previewImage)
     }
     
     

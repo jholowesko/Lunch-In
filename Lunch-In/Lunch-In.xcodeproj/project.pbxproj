@@ -11,6 +11,8 @@
 		B7CB5C6923AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB5C6823AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift */; };
 		B7CD02E323AC0C9D00322436 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD02E223AC0C9D00322436 /* Restaurant.swift */; };
 		B7CD02E523AC0D7400322436 /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD02E423AC0D7400322436 /* RestaurantController.swift */; };
+		B7CD02E723AC205D00322436 /* AddRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD02E623AC205D00322436 /* AddRestaurantViewController.swift */; };
+		B7CD02E923AC208100322436 /* AddPreviewCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD02E823AC208100322436 /* AddPreviewCollectionViewController.swift */; };
 		B7E25CB023AAC95F00055CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E25CAF23AAC95F00055CB7 /* AppDelegate.swift */; };
 		B7E25CB223AAC95F00055CB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E25CB123AAC95F00055CB7 /* SceneDelegate.swift */; };
 		B7E25CB723AAC95F00055CB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E25CB523AAC95F00055CB7 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		B7CB5C6823AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedRestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
 		B7CD02E223AC0C9D00322436 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = "Lunch-In/View Controllers/Restaurant.swift"; sourceTree = SOURCE_ROOT; };
 		B7CD02E423AC0D7400322436 /* RestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestaurantController.swift; path = "Lunch-In/View Controllers/RestaurantController.swift"; sourceTree = SOURCE_ROOT; };
+		B7CD02E623AC205D00322436 /* AddRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRestaurantViewController.swift; sourceTree = "<group>"; };
+		B7CD02E823AC208100322436 /* AddPreviewCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPreviewCollectionViewController.swift; sourceTree = "<group>"; };
 		B7E25CAC23AAC95F00055CB7 /* Lunch-In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunch-In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E25CAF23AAC95F00055CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7E25CB123AAC95F00055CB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 			children = (
 				B7CB5C6623AB1CDA002780F5 /* SuggestedRestaurantsCollectionViewController.swift */,
 				B7CB5C6823AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift */,
+				B7CD02E623AC205D00322436 /* AddRestaurantViewController.swift */,
+				B7CD02E823AC208100322436 /* AddPreviewCollectionViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -188,10 +194,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7E25CB023AAC95F00055CB7 /* AppDelegate.swift in Sources */,
+				B7CD02E923AC208100322436 /* AddPreviewCollectionViewController.swift in Sources */,
 				B7CB5C6923AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift in Sources */,
 				B7CD02E523AC0D7400322436 /* RestaurantController.swift in Sources */,
 				B7E25CB223AAC95F00055CB7 /* SceneDelegate.swift in Sources */,
 				B7CB5C6723AB1CDA002780F5 /* SuggestedRestaurantsCollectionViewController.swift in Sources */,
+				B7CD02E723AC205D00322436 /* AddRestaurantViewController.swift in Sources */,
 				B7CD02E323AC0C9D00322436 /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

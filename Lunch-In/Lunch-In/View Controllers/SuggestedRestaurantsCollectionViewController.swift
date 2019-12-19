@@ -11,7 +11,6 @@ class SuggestedRestaurantsCollectionViewController: UICollectionViewController {
     // View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "RestaurantCell")
     }
 
 

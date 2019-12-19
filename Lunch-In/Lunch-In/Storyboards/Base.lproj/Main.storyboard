@@ -156,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1G3-Yx-hYg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1941" y="-82"/>
+            <point key="canvasLocation" x="1930" y="-82"/>
         </scene>
         <!--Add Preview Collection View Controller-->
         <scene sceneID="FVl-Yn-OO4">
@@ -191,7 +191,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qTN-1K-ihh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2761" y="-82"/>
+            <point key="canvasLocation" x="2709" y="-82"/>
         </scene>
     </scenes>
 </document>

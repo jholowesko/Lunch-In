@@ -6,8 +6,9 @@ class RestaurantController {
     // MARK: - Properties:
     
     // Suggested Restaurants [Array]
-    var suggestedRestaurants: [Restuarant] = [Restuarant(restaurantName: "John's Pizzaria", numerOfVotes: 0, previewImage: "pizza", didSelfVote: false), Restuarant(restaurantName: "Kevin's Wine", numerOfVotes: 10, previewImage: "wine", didSelfVote: false)]
+    var suggestedRestaurants: [Restuarant] = []
     
+//    Restuarant(restaurantName: "John's Pizzaria", numerOfVotes: 0, previewImage: "pizza", didSelfVote: false), Restuarant(restaurantName: "Kevin's Wine", numerOfVotes: 10, previewImage: "wine", didSelfVote: false)
     
     
     // MARK: - Initializer:

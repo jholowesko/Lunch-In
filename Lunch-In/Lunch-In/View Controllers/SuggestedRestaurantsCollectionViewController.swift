@@ -1,7 +1,10 @@
 import UIKit
 
-class RestaurantListCollectionViewController: UICollectionViewController {
+class SuggestedRestaurantsCollectionViewController: UICollectionViewController {
 
+    // Instance of Restaurant Controller
+    let restaurantController = RestaurantController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "RestaurantCell")
@@ -12,12 +15,15 @@ class RestaurantListCollectionViewController: UICollectionViewController {
 
     // Number of Items in Restaurant Collection View
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return restaurantController.suggestedRestaurants.count
     }
 
-    // What's inside each Resaturant Cell
+    // Content inside each Resaturant Cell
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RestaurantCell", for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RestaurantCell", for: indexPath) as? SuggestedRestaurantCollectionViewCell else { return UICollectionViewCell()}
+        
+        cell.restaurant = restaurantController.suggestedRestaurants[indexPath.item]
+        
         return cell
     }
 

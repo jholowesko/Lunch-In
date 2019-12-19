@@ -109,8 +109,8 @@
 				B7CCD03C23AACCDC00649DDD /* Resources */,
 				B7CCD03E23AACCED00649DDD /* Storyboards */,
 				B7CCD03F23AACCFE00649DDD /* Models */,
-				B7CCD03D23AACCE500649DDD /* View Controllers */,
 				B7CCD04023AACD0300649DDD /* Controllers */,
+				B7CCD03D23AACCE500649DDD /* View Controllers */,
 				B7E25CBD23AAC96100055CB7 /* Info.plist */,
 			);
 			path = "Lunch-In";

@@ -3,7 +3,6 @@ import Foundation
 class RestaurantController {
     
     
-    
     // MARK: - Properties:
     
     // Suggested Restaurants [Array]
@@ -17,6 +16,18 @@ class RestaurantController {
     init() {
         loadFromPersistentStore()
         print("Loaded from Persistent Store")
+    }
+    
+    
+    
+    // MARK: - Functions:
+    
+    // (Function) to create a new Restaurant
+    // Initializes numberOfVotes -> 0; didSelfVote -> False
+    @discardableResult func createRestaurant(restaurantName: String, previewImage: String) -> Restuarant {
+        let suggestedRestaurant = Restuarant(restaurantName: restaurantName, numerOfVotes: 0, previewImage: previewImage, didSelfVote: false)
+        suggestedRestaurants.append(suggestedRestaurant)
+        return suggestedRestaurant
     }
     
     

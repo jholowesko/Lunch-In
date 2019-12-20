@@ -1,12 +1,33 @@
 import UIKit
 
+    //MARK: - Protocols
+
+
+    //MARK: - Class
 class AddRestaurantViewController: UIViewController {
+    
+    
+    //MARK: - Properties
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    //MARK: - IBOutlets
+    
+    
+    
+    
+    
+    
+    //MARK: - IBActions
+    
+    
+    
+    
     
 
     /*

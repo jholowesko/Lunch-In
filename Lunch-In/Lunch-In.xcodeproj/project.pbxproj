@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1172C4A123AC60AA000FCCCC /* FoodTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1172C4A023AC60AA000FCCCC /* FoodTypeCollectionViewCell.swift */; };
 		B7CB5C6723AB1CDA002780F5 /* SuggestedRestaurantsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB5C6623AB1CDA002780F5 /* SuggestedRestaurantsCollectionViewController.swift */; };
 		B7CB5C6923AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB5C6823AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift */; };
 		B7CD02E323AC0C9D00322436 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD02E223AC0C9D00322436 /* Restaurant.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1172C4A023AC60AA000FCCCC /* FoodTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		B7CB5C6623AB1CDA002780F5 /* SuggestedRestaurantsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedRestaurantsCollectionViewController.swift; sourceTree = "<group>"; };
 		B7CB5C6823AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedRestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
 		B7CD02E223AC0C9D00322436 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = "Lunch-In/View Controllers/Restaurant.swift"; sourceTree = SOURCE_ROOT; };
@@ -64,6 +66,7 @@
 				B7CB5C6823AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift */,
 				B7CD02E623AC205D00322436 /* AddRestaurantViewController.swift */,
 				B7CD02E823AC208100322436 /* AddPreviewCollectionViewController.swift */,
+				1172C4A023AC60AA000FCCCC /* FoodTypeCollectionViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1172C4A123AC60AA000FCCCC /* FoodTypeCollectionViewCell.swift in Sources */,
 				B7E25CB023AAC95F00055CB7 /* AppDelegate.swift in Sources */,
 				B7CD02E923AC208100322436 /* AddPreviewCollectionViewController.swift in Sources */,
 				B7CB5C6923AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift in Sources */,

@@ -4,7 +4,6 @@ class RestaurantController {
     
     
     // MARK: - Properties:
-    
     // Suggested Restaurants [Array]
     var suggestedRestaurants: [Restuarant] = []
     
@@ -25,7 +24,7 @@ class RestaurantController {
     
     // (Function) to create a new Restaurant
     @discardableResult func createRestaurant(restaurantName: String, previewImage: String) -> Restuarant {
-        let suggestedRestaurant = Restuarant(restaurantName: restaurantName, numerOfVotes: 0, previewImage: previewImage, didSelfVote: false)
+        let suggestedRestaurant = Restuarant(restaurantName: restaurantName, numberOfVotes: 0, previewImage: previewImage, didSelfVote: false)
         suggestedRestaurants.append(suggestedRestaurant)
         return suggestedRestaurant
     }

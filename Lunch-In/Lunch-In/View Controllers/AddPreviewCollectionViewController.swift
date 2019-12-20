@@ -1,8 +1,20 @@
 import UIKit
 
+protocol AddNewRestaurantDelegate {
+    func addNewrestaurant(_ restaurant: Restuarant)
+}
+
 private let reuseIdentifier = "Cell"
 
 class AddPreviewCollectionViewController: UICollectionViewController {
+    
+    //MARK: - Properties
+    
+    var delegate = AddNewRestaurantDelegate.self
+    
+    var previewImages: [String] = ["apple", "burger", "bread", "carrot", "chefhat", "chopsticks", "coffee", "drumstick", "fries", "grapes", "grater", "grill", "orange", "picnic", "pizza", "popsicle", "softdrink", "strawberry", "watermelon", "wine", "wisk", "spatula"]
+    
+    var restaurantController = RestaurantController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,19 +40,22 @@ class AddPreviewCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return previewImages.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodPreviewCell", for: indexPath) as? FoodTypeCollectionViewCell else { return UICollectionViewCell()}
+        
+        
+        cell.imageView.image = UIImage(named: previewImages[indexPath.item])
+        cell.foodLabel.text = previewImages[indexPath.item]
     
         // Configure the cell
     

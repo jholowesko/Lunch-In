@@ -30,7 +30,7 @@ class SuggestedRestaurantCollectionViewCell: UICollectionViewCell {
             return
         }
         restaurantNameLabel.text = restaurant.restaurantName
-        numberOfVotesLabel.text = String(restaurant.numerOfVotes)
+        numberOfVotesLabel.text = String(restaurant.numberOfVotes)
         previewImage.image = UIImage(named: restaurant.previewImage)
     }
     

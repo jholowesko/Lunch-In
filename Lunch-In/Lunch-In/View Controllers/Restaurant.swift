@@ -8,7 +8,8 @@ struct Restuarant: Codable, Equatable {
     var numberOfVotes: Int //number was mispelled so I changed it along with in the other controllers
     var previewImage: String
     var didSelfVote: Bool
-    // var foodOption: String
+    // var foodOption: String | Added This
+    // New Commment
     // this property will help me in my foodTypeCollectionViewCell as well as my AddPreviewCollectionViewController
 
     

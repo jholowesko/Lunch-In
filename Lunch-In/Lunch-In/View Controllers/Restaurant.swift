@@ -1,6 +1,7 @@
 import Foundation
 import UIKit
 
+
 // MARK: - Restaurant Model:
 
 struct Restuarant: Codable, Equatable {

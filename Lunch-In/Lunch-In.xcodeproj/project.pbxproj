@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		114088CC23C5762000357085 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114088CB23C5762000357085 /* Group.swift */; };
 		1172C4A123AC60AA000FCCCC /* FoodTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1172C4A023AC60AA000FCCCC /* FoodTypeCollectionViewCell.swift */; };
 		B7CB5C6723AB1CDA002780F5 /* SuggestedRestaurantsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB5C6623AB1CDA002780F5 /* SuggestedRestaurantsCollectionViewController.swift */; };
 		B7CB5C6923AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB5C6823AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		114088CB23C5762000357085 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Group.swift; path = "Lunch-In/View Controllers/Group.swift"; sourceTree = SOURCE_ROOT; };
 		1172C4A023AC60AA000FCCCC /* FoodTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		B7CB5C6623AB1CDA002780F5 /* SuggestedRestaurantsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedRestaurantsCollectionViewController.swift; sourceTree = "<group>"; };
 		B7CB5C6823AB1E0F002780F5 /* SuggestedRestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedRestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -54,6 +52,7 @@
 			children = (
 				B7E25CAF23AAC95F00055CB7 /* AppDelegate.swift */,
 				B7E25CB123AAC95F00055CB7 /* SceneDelegate.swift */,
+				B7E25CBA23AAC96100055CB7 /* LaunchScreen.storyboard */,
 				B7E25CB823AAC96100055CB7 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -74,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				B7E25CB523AAC95F00055CB7 /* Main.storyboard */,
-				B7E25CBA23AAC96100055CB7 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -83,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				B7CD02E223AC0C9D00322436 /* Restaurant.swift */,
-				114088CB23C5762000357085 /* Group.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,7 +193,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114088CC23C5762000357085 /* Group.swift in Sources */,
 				1172C4A123AC60AA000FCCCC /* FoodTypeCollectionViewCell.swift in Sources */,
 				B7E25CB023AAC95F00055CB7 /* AppDelegate.swift in Sources */,
 				B7CD02E923AC208100322436 /* AddPreviewCollectionViewController.swift in Sources */,

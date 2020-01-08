@@ -13,7 +13,6 @@ class SuggestedRestaurantsCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
     }
 
-
     
     // MARK: - UICollectionViewDataSource:
     

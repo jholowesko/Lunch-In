@@ -1,11 +1,3 @@
-//
-//  FoodTypeCollectionViewCell.swift
-//  Lunch-In
-//
-//  Created by Kevin Stewart on 12/19/19.
-//  Copyright © 2019 John Holowesko. All rights reserved.
-//
-
 import UIKit
 
 class FoodTypeCollectionViewCell: UICollectionViewCell {

@@ -1,7 +1,7 @@
 import UIKit
 
 protocol AddNewRestaurantDelegate {
-    func addNewrestaurant(_ restaurant: Restuarant)
+    func addNewRestaurant(_ restaurant: Restuarant)
 }
 
 private let reuseIdentifier = "Cell"
@@ -10,7 +10,7 @@ class AddPreviewCollectionViewController: UICollectionViewController {
     
     //MARK: - Properties
     
-    var delegate = AddNewRestaurantDelegate.self
+    var delegate: AddNewRestaurantDelegate?
     
     var previewImages: [String] = ["apple", "burger", "bread", "carrot", "chefhat", "chopsticks", "coffee", "drumstick", "fries", "grapes", "grater", "grill", "orange", "picnic", "pizza", "popsicle", "softdrink", "strawberry", "watermelon", "wine", "wisk", "spatula"]
     
@@ -40,16 +40,11 @@ class AddPreviewCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-
-
+    //creates cell for each food type
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return previewImages.count
     }
-
+    //lets cells take the name and image for each type of food
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodPreviewCell", for: indexPath) as? FoodTypeCollectionViewCell else { return UICollectionViewCell()}
         
@@ -57,40 +52,34 @@ class AddPreviewCollectionViewController: UICollectionViewController {
         cell.imageView.image = UIImage(named: previewImages[indexPath.item])
         cell.foodLabel.text = previewImages[indexPath.item]
     
-        // Configure the cell
-    
         return cell
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
-    }
-    */
+    
+    //allows user to select which type of food type they want
+//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        restaurantController.suggestedRestaurants(indexPath: indexPath)
+//        self.collectionView.reloadData()
+//
+//
+//    }
+    
+    //MARK: - IBActions
+    
+//    //creates and appends food type to SuggestedRestaurantCollectionViewController
+//    func createSuggestedRestaurant(restaurantName: String, numberOfVotes: Int, previewImage: String, didSelfVote: Bool) {
+//        let suggestedRestaurant = Restuarant(restaurantName: restaurantName, numberOfVotes: numberOfVotes, previewImage: previewImage, didSelfVote: didSelfVote)
+//        
+//        restaurantController.suggestedRestaurants.append(suggestedRestaurant)
+//    }
 
 }
+//MARK: - Extensions
+//extension SuggestedRestaurantsCollectionViewController: AddNewRestaurantDelegate {
+//    func addNewRestaurant(_ restaurant: Restuarant) {
+//        restaurantController.append(SuggestedRestaurantCollectionViewCell)
+//        collectionView.reloadData()
+//    }
+//
+//
+//}

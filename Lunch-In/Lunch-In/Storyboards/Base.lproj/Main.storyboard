@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GAB-ko-gm5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GAB-ko-gm5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -105,7 +105,7 @@
                     <navigationItem key="navigationItem" title="Suggested Restaurants" id="3We-Ho-Pfj">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="g0G-Hy-Rah">
                             <connections>
-                                <segue destination="C1K-vh-vJg" kind="show" identifier="AddRestaurantSegue" id="rkU-mT-z8i"/>
+                                <segue destination="lGr-D2-V0U" kind="show" identifier="AddRestaurantSegue" id="TkF-gi-4hS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -132,53 +132,7 @@
             </objects>
             <point key="canvasLocation" x="393" y="-82"/>
         </scene>
-        <!--Add Restaurant View Controller-->
-        <scene sceneID="yt0-lh-CAO">
-            <objects>
-                <viewController id="C1K-vh-vJg" customClass="AddRestaurantViewController" customModule="Lunch_In" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UbN-q4-Wfq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEo-Un-g3u">
-                                <rect key="frame" x="143" y="430" width="130" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Lunch options!"/>
-                                <connections>
-                                    <segue destination="lGr-D2-V0U" kind="show" identifier="AddPreviewSegue" id="aSy-A5-8wv"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVX-ga-tjy">
-                                <rect key="frame" x="61" y="116" width="293" height="156"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="156" id="dw7-2b-udP"/>
-                                </constraints>
-                                <string key="text">What kind of food 
-would your group
-like to eat?</string>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="RDW-a4-dXE" firstAttribute="trailing" secondItem="JEo-Un-g3u" secondAttribute="trailing" constant="141" id="ABq-xy-htt"/>
-                            <constraint firstItem="RDW-a4-dXE" firstAttribute="trailing" secondItem="oVX-ga-tjy" secondAttribute="trailing" constant="60" id="UiL-Ba-mtF"/>
-                            <constraint firstItem="oVX-ga-tjy" firstAttribute="leading" secondItem="RDW-a4-dXE" secondAttribute="leading" constant="61" id="a4j-jL-vMg"/>
-                            <constraint firstItem="RDW-a4-dXE" firstAttribute="bottom" secondItem="JEo-Un-g3u" secondAttribute="bottom" constant="396" id="mzR-5Z-Ocy"/>
-                            <constraint firstItem="oVX-ga-tjy" firstAttribute="top" secondItem="RDW-a4-dXE" secondAttribute="top" constant="28" id="qHX-um-MFe"/>
-                            <constraint firstItem="JEo-Un-g3u" firstAttribute="leading" secondItem="RDW-a4-dXE" secondAttribute="leading" constant="143" id="s3j-Zp-fNe"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="RDW-a4-dXE"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Pe6-l7-Eyz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1G3-Yx-hYg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1928.985507246377" y="-82.366071428571431"/>
-        </scene>
-        <!--Title-->
+        <!--Here are some options!-->
         <scene sceneID="FVl-Yn-OO4">
             <objects>
                 <collectionViewController id="lGr-D2-V0U" customClass="AddPreviewCollectionViewController" customModule="Lunch_In" customModuleProvider="target" sceneMemberID="viewController">
@@ -204,29 +158,41 @@ like to eat?</string>
                                             <rect key="frame" x="8" y="8" width="147" height="150"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTt-5G-xKA">
-                                                    <rect key="frame" x="51.5" y="0.0" width="44" height="26"/>
+                                                    <rect key="frame" x="51.5" y="0.0" width="44" height="26.5"/>
                                                     <state key="normal" title="Select"/>
                                                     <connections>
                                                         <action selector="selectButtonTapped:" destination="4yZ-MO-0C8" eventType="touchUpInside" id="IfK-YW-m0r"/>
                                                     </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wcr-mM-ofR">
-                                                    <rect key="frame" x="6.5" y="31" width="134" height="93.5"/>
+                                                    <rect key="frame" x="6.5" y="31.5" width="134" height="93"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Wcr-mM-ofR" secondAttribute="height" multiplier="134:93" id="UTi-9X-PPm"/>
+                                                        <constraint firstAttribute="height" constant="93" id="uXb-3R-5Ky"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oec-h3-WSX">
-                                                    <rect key="frame" x="35" y="129.5" width="77.5" height="20.5"/>
+                                                    <rect key="frame" x="35" y="129.5" width="77" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20.5" id="ViQ-ZZ-0kR"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Oec-h3-WSX" firstAttribute="leading" secondItem="ygp-Ni-33n" secondAttribute="leading" constant="35" id="nvu-EW-UVS"/>
+                                            </constraints>
                                         </stackView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="ygp-Ni-33n" firstAttribute="trailing" secondItem="Bf5-xz-zzC" secondAttribute="trailingMargin" id="6wx-lw-ZC1"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="ygp-Ni-33n" secondAttribute="bottom" id="HeH-SC-jtc"/>
+                                        <constraint firstItem="ygp-Ni-33n" firstAttribute="centerX" secondItem="Bf5-xz-zzC" secondAttribute="centerX" id="VuG-ko-Gm1"/>
                                         <constraint firstItem="ygp-Ni-33n" firstAttribute="leading" secondItem="Bf5-xz-zzC" secondAttribute="leadingMargin" id="Xmd-kn-buF"/>
                                         <constraint firstItem="ygp-Ni-33n" firstAttribute="top" secondItem="Bf5-xz-zzC" secondAttribute="topMargin" id="h8S-qy-jhV"/>
+                                        <constraint firstItem="ygp-Ni-33n" firstAttribute="centerY" secondItem="Bf5-xz-zzC" secondAttribute="centerY" id="kpf-t6-7nV"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="163" height="166"/>
@@ -242,11 +208,46 @@ like to eat?</string>
                             <outlet property="delegate" destination="lGr-D2-V0U" id="DW2-XD-2YK"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Title" id="J9m-zJ-oGH"/>
+                    <navigationItem key="navigationItem" title="Here are some options!" id="J9m-zJ-oGH"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qTN-1K-ihh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2708.6956521739135" y="-82.366071428571431"/>
+            <point key="canvasLocation" x="1848" y="-82"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AeP-0U-dRt">
+            <objects>
+                <viewController id="ZfB-xb-NiC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2YD-g9-dc6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YeO-iI-IGl">
+                                <rect key="frame" x="33" y="163" width="337" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your name for the group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef5-Zd-iBW">
+                                <rect key="frame" x="92" y="119" width="230" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFX-ur-0B8">
+                                <rect key="frame" x="165" y="236" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Name"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lIX-ef-fyE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w2o-hY-YpZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2589.8550724637685" y="-85.044642857142847"/>
         </scene>
     </scenes>
 </document>
